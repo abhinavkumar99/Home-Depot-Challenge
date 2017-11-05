@@ -1,11 +1,12 @@
 import json
-import tensorflow as tf
-from datetime import datetime as dt
-import numpy as np
 import os
-import matplotlib.pyplot as plt
 import sys
 import csv
+import tensorflow as tf
+import numpy as np
+
+import matplotlib.pyplot as plt
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 def emb(file):
     data = json.loads(open(str(file)).read().strip())
